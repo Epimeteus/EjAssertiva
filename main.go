@@ -23,8 +23,8 @@ func main() {
 }
 
 func siguiente(patente string, k int) string {
-	for ; k > 0; k-- {
-		patente = rotarUltimaLetra(strings.ToUpper(patente))
+	for ; k > 0; k-- { // loopea k cantidad de veces
+		patente = rotarUltimaLetra(strings.ToUpper(patente)) //  le pasa la patente ingresada en mayusculas a la funcion rotar
 	}
 
 	return patente
