@@ -31,8 +31,8 @@ func siguiente(patente string, k int) string {
 }
 
 func rotarUltimaLetra(patente string) string {
-	ultimaLetra := patente[len(patente)-1]
-	patenteSinUltimaLetra := patente[:len(patente)-1]
+	ultimaLetra := patente[len(patente)-1]            //creamos una variable que contiene la ultima letra de la patente
+	patenteSinUltimaLetra := patente[:len(patente)-1] // creamos una variable que contiene el resto de la patente
 	if ultimaLetra == 'Z' {
 		return rotarUltimaLetra(patenteSinUltimaLetra) + "A"
 	}
